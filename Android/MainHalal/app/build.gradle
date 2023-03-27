@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.android.gdehalal'
+    namespace 'company.besteat.gdehalal'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.android.gdehalal"
+        applicationId "company.besteat.gdehalal"
         minSdk 24
         targetSdk 33
         versionCode 1

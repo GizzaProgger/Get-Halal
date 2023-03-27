@@ -1,19 +1,17 @@
-package com.android.gdehalal
+package company.besteat.gdehalal
 
 import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Intent
 import android.content.pm.ActivityInfo
-import android.net.Uri
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.webkit.*
 import androidx.annotation.RequiresApi
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
-import org.json.JSONObject
+//import com.android.gdehalal.R
 
 //class MainActivity : AppCompatActivity() {
 //    override fun onCreate(savedInstanceState: Bundle?) {
