@@ -88,9 +88,13 @@ struct myWebLosView : UIViewRepresentable {
 
 struct ContentView: View {
     var body: some View {
-     
-            myWebLosView().ignoresSafeArea().statusBar(hidden: true)
-        
+        GeometryReader { geometry in
+            ZStack(alignment: .topLeading) {
+                Rectangle().fill(Color.yellow)
+                    .frame(height: geometry.safeAreaInsets.top)
+                myWebLosView().frame(maxWidth: .infinity, maxHeight: .infinity)
+            }
+        }
     }
 }
 
