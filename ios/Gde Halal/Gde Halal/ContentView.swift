@@ -87,10 +87,12 @@ struct myWebLosView : UIViewRepresentable {
 
 
 struct ContentView: View {
+    @Environment(\.colorScheme) var colorScheme
+    
     var body: some View {
         GeometryReader { geometry in
             ZStack(alignment: .topLeading) {
-                Rectangle().fill(Color.yellow)
+                Rectangle().fill(colorScheme == .dark ? Color.black : Color.white) // change color based on color scheme
                     .frame(height: geometry.safeAreaInsets.top)
                 myWebLosView().frame(maxWidth: .infinity, maxHeight: .infinity)
             }
